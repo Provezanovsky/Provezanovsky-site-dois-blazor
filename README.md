@@ -28,18 +28,6 @@ dotnet watch --project SiteDoisBlazor --launch-profile http
 
 Abra **http://localhost:5180** e navegue pelos links do menu lateral.
 
-## Executar no Visual Studio
-
-1. Abra `SiteDoisBlazor.sln`.
-2. Selecione o projeto `SiteDoisBlazor` e o perfil `http`.
-3. Pressione **F5**.
-
-## Compilar
-
-```bash
-dotnet build SiteDoisBlazor.sln --configuration Release
-```
-
 ## Estrutura
 
 - `SiteDoisBlazor/Components/Pages/`: páginas dos exercícios.
