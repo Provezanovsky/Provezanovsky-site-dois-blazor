@@ -1,0 +1,26 @@
+@page "/sorteio"
+@rendermode InteractiveServer
+
+<PageTitle>Sorteador de Números</PageTitle>
+<p class="eyebrow">Exercício 03</p>
+<h1>Sorteador de Números</h1>
+<p class="intro">Gere um número aleatório entre 1 e 100.</p>
+
+<section class="exercise" aria-label="Sorteio de número">
+    <button type="button" @onclick="SorteiaNumero">Gerar Número Aleatório</button>
+    <div aria-live="polite">
+        @if (numeroSorteado.HasValue)
+        {
+            <h2 class="result">Número sorteado: @numeroSorteado</h2>
+        }
+    </div>
+</section>
+
+@code {
+    private int? numeroSorteado;
+
+    private void SorteiaNumero()
+    {
+        numeroSorteado = Random.Shared.Next(1, 101);
+    }
+}

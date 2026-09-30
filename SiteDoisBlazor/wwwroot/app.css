@@ -1,0 +1,46 @@
+:root { color-scheme: light; font-family: "Segoe UI", Arial, sans-serif; color: #17243b; background: #f6f8fc; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #315fc4; }
+.page { display: flex; min-height: 100vh; }
+.sidebar { width: 255px; flex-shrink: 0; background: #17243b; color: white; }
+.brand { padding: 27px 24px; font-size: 1.25rem; font-weight: 700; border-bottom: 1px solid #ffffff20; }
+nav { padding: 20px 12px; }
+.nav-item { margin-bottom: 8px; }
+.nav-link { display: block; padding: 14px 12px; border-radius: 8px; text-decoration: none; color: #e0e7f4; }
+.nav-link:hover { background: #ffffff14; }
+.nav-link.active { background: #315fc4; color: white; }
+main { flex: 1; min-width: 0; }
+.top-row { padding: 24px 40px; background: white; border-bottom: 1px solid #e2e7f0; font-size: .9rem; color: #62708a; }
+.content { max-width: 1160px; padding: 45px 40px; }
+.eyebrow { text-transform: uppercase; color: #315fc4; letter-spacing: .09em; font-size: .75rem; font-weight: 700; }
+h1 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin: 12px 0; }
+h2 { font-size: 1.25rem; }
+.intro { color: #62708a; line-height: 1.6; margin-bottom: 30px; }
+.activities { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.activity, .exercise { background: white; padding: 28px; border: 1px solid #e2e7f0; border-radius: 12px; }
+.activity { text-decoration: none; color: #17243b; }
+.activity:hover { border-color: #315fc4; }
+.activity-number { color: #315fc4; font-weight: 700; }
+.activity p { color: #62708a; line-height: 1.6; }
+.exercise { max-width: 600px; }
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+input { width: 100%; padding: 12px; border: 1px solid #aab7ce; border-radius: 6px; font: inherit; margin-bottom: 20px; }
+button { padding: 13px 20px; border: 0; border-radius: 6px; font: inherit; font-weight: 600; background: #315fc4; color: white; cursor: pointer; }
+button:hover { background: #244b9c; }
+input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #8bb4ff; outline-offset: 3px; }
+.result { margin-top: 24px; padding-top: 20px; border-top: 1px solid #e2e7f0; font-weight: 600; }
+.status { font-size: 1.2rem; font-weight: 700; }
+#blazor-error-ui { display: none; position: fixed; bottom: 0; width: 100%; padding: 16px; background: #fff0b8; box-shadow: 0 -1px 4px #0003; }
+#blazor-error-ui .dismiss { position: absolute; right: 20px; cursor: pointer; }
+@media (max-width: 700px) {
+    .page { flex-direction: column; }
+    .sidebar { width: 100%; }
+    .brand { padding: 18px 20px; }
+    nav { display: flex; flex-wrap: wrap; gap: 5px; padding: 12px; }
+    .nav-item { margin: 0; }
+    .nav-link { padding: 10px; }
+    .top-row { padding: 18px 24px; }
+    .content { padding: 28px 24px; }
+    .exercise { padding: 22px; }
+}
