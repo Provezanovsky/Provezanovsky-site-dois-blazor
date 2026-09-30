@@ -1,6 +1,6 @@
 # SiteDoisBlazor
 
-Projeto acadêmico em **C# / Blazor Web App (.NET 8)**, com componentes interativos renderizados no servidor.
+Aplicação em **C# / Blazor Web App (.NET 8)**, com componentes interativos renderizados no servidor.
 
 ## Atividades
 
@@ -36,7 +36,7 @@ Abra **http://localhost:5180** e navegue pelos links do menu lateral.
 - `.gitignore`: modelo do Visual Studio.
 - `LICENSE`: licença MIT.
 
-## Roteiro de verificação
+## Guia de uso
 
 1. Acesse **Conversor** pelo menu: `0 °C → 32 °F`, `100 °C → 212 °F`, `−40 °C → −40 °F`.
 2. Acesse **Calculadora de Média**: notas `8` e `6` resultam em média `7` e **Aprovado!** em verde; notas `5` e `6` resultam em média `5,5` e **Reprovado!** em vermelho. O resultado fica oculto antes do primeiro cálculo.
